@@ -56,6 +56,7 @@ export default {
 
 <style lang="scss" scoped>
 nav {
+  min-height: 8vh;
   background-color: #262626;
   a{
     color: #fff;

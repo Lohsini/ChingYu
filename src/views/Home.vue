@@ -5,7 +5,6 @@
 </template>
 
 <script>
-// @ is an alias to /src
 
 export default {
   name: 'Home',
@@ -13,3 +12,10 @@ export default {
   },
 };
 </script>
+
+<style lang="scss" scoped>
+.home{
+  background-color: rgb(212, 212, 212);
+  min-height: 92vh;
+}
+</style>
