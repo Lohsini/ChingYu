@@ -2,7 +2,7 @@
   <div>
     <nav class="navbar navbar-expand-lg">
       <router-link class="navbar-brand" to="/">
-        <i class="fas fa-car mr-3 text-info"></i>慶宇汽車 保養修理廠</router-link>
+        <i class="fas fa-car mr-3 text-warning"></i>慶宇汽車 保養修理廠</router-link>
       <button
         class="navbar-toggler"
         type="button"
