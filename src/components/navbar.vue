@@ -26,7 +26,7 @@
             <router-link class="nav-link after" to="/service">服務內容</router-link>
           </li>
           <li class="nav-item">
-            <router-link class="nav-link after" to="/information">營業時間</router-link>
+            <router-link class="nav-link after" to="/information">營業資訊</router-link>
           </li>
           <li class="nav-item">
             <router-link class="nav-link after" to="/reservation">線上預約</router-link>

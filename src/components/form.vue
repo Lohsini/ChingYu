@@ -119,6 +119,7 @@ export default {
         padding: 0 10px;
         border: 1px solid transparent;
         font-weight: 400;
+        cursor: pointer;
       }
       input[type="radio"] {
         opacity: 0; //設置透明度，隱藏原有input樣式

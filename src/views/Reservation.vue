@@ -1,7 +1,7 @@
 <template>
   <div class="reservation">
     <div class="firstpage">
-      <Banner />
+      <Banner :banner="banner"/>
 
       <div class="content">
         <div class="container">
@@ -15,7 +15,7 @@
 
             <div class="txt col-12 col-md-6">
               <h2 class="mb-5">線上預約</h2>
-              <p><i class="fas fa-file-alt mr-3"></i>填寫以下表單
+              <p><i class="fas fa-file-alt mr-3"></i>填寫<strong class="text-danger">以下表單</strong>
               <br>我們收到您的預約將會以LINE通知確認，若無LINE通訊軟體，將會以電話或簡訊連絡，敬請留下正確的資料。</p>
               <p><i class="fab fa-facebook mr-3"></i>使用Facebook
               <br>直接私訊粉絲專頁(最上方導覽列及最下方資訊欄都有<i class="fab fa-facebook px-1"></i>圖示，可直接點擊進入)</p>
@@ -41,7 +41,13 @@ import Form from '@/components/form.vue';
 
 export default {
   data() {
-    return {};
+    return {
+      banner: {
+        chineseName: '線上預約',
+        englishName: 'Reservation',
+        background: 'https://picsum.photos/1000/500?random=26',
+      },
+    };
   },
   components: {
     Banner,

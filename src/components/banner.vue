@@ -1,10 +1,10 @@
 <template>
-  <div class="banner">
+  <div class="banner" :style="{ backgroundImage: 'url(' + banner.background + ')' }">
     <div class="background">
       <div class="container">
         <div class="txt text-center">
-          <h1 class="mb-4">線上預約</h1>
-          <h2 class="mb-0">Reservation</h2>
+          <h1 class="mb-4">{{ banner.chineseName }}</h1>
+          <h2 class="mb-0">{{ banner.englishName }}</h2>
         </div>
       </div>
     </div>
@@ -14,6 +14,16 @@
 <script>
 
 export default {
+  props: {
+    banner: {
+      type: Object,
+      default: () => ({
+        chineseName: '',
+        englishName: '',
+        background: '',
+      }),
+    },
+  },
   data() {
     return {};
   },
@@ -24,7 +34,7 @@ export default {
 .banner {
   width: 100%;
   height: 40vh;
-  background-image: url(https://picsum.photos/1000/500?random=26);
+  // background-image: url(https://picsum.photos/1000/500?random=26);
   background-repeat: no-repeat;
   background-size: cover;
   .background {

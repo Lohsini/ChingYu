@@ -25,7 +25,7 @@
                 <router-link to="/"><i class="fas fa-angle-right"></i>首頁</router-link>
                 <router-link to="/about"><i class="fas fa-angle-right"></i>關於我們</router-link>
                 <router-link to="/service"><i class="fas fa-angle-right"></i>服務內容</router-link>
-                <router-link to="/information"><i class="fas fa-angle-right"></i>營業時間</router-link>
+                <router-link to="/information"><i class="fas fa-angle-right"></i>營業資訊</router-link>
                 <router-link to="/reservation"><i class="fas fa-angle-right"></i>線上預約</router-link>
               </nav>
             </div>
