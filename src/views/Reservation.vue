@@ -8,7 +8,7 @@
           <div class="row text-left mx-auto">
             <div class="txt col-12 col-md-6">
               <h2 class="mb-5">快速預約</h2>
-              <p><i class="fas fa-phone mr-3"></i>直撥老闆手機：0928-205868</p>
+              <p><i class="fas fa-mobile-alt mr-3"></i>直撥老闆手機：0928-205868</p>
               <p><i class="fab fa-line mr-3"></i>加老闆LINE ID：0928205868</p>
               <p>以上預約方法可直接與老闆聯繫，歡迎使用。</p>
             </div>
