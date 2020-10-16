@@ -32,7 +32,7 @@
             <div class="footer-item item-icon">
               <ul class="navbar-nav">
                 <li>
-                  <a href=""><i class="fab fa-facebook-square"></i></a>
+                  <a href="https://www.facebook.com/yuwei921224"><i class="fab fa-facebook-square"></i></a>
                 </li>
                 <li>
                   <a href=""><i class="fab fa-line"></i></a>
