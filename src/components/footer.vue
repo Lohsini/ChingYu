@@ -14,9 +14,9 @@
               <h1>聯絡方式</h1>
               <nav>
                 <p><i class="fas fa-phone"></i>聯絡電話：03-5255711</p>
-                <p><i class="fas fa-phone"></i>老闆手機：0928-205868 (快速聯繫)</p>
+                <p><i class="fas fa-mobile-alt"></i>老闆手機：0928-205868 (快速聯繫)</p>
                 <p><i class="fas fa-map-marker-alt"></i>地址：新竹市林森路301號</p>
-                <p><i class="far fa-envelope-open"></i>客服信箱：abdhsk123@gmail.com</p>
+                <!-- <p><i class="far fa-envelope-open"></i>客服信箱：abdhsk123@gmail.com</p> -->
               </nav>
             </div>
             <div class="footer-item item-map">
