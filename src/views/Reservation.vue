@@ -19,7 +19,7 @@
               <br>我們收到您的預約將會以LINE通知確認，若無LINE通訊軟體，將會以電話或簡訊連絡，敬請留下正確的資料。</p>
               <p><i class="fab fa-facebook mr-3"></i>使用Facebook
               <br>直接私訊粉絲專頁(最上方導覽列及最下方資訊欄都有<i class="fab fa-facebook px-1"></i>圖示，可直接點擊進入)</p>
-              <p>以上預約方法將由小編轉達老闆，歡迎使用。</p>
+              <p>以上預約方法將由小編轉達老闆，<strong class="text-danger">建議提前兩天預約</strong>，歡迎使用。</p>
             </div>
           </div>
         </div>

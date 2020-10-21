@@ -15,3 +15,9 @@ new Vue({
   router,
   render: (h) => h(App),
 }).$mount('#app');
+
+// eslint-disable-next-line no-unused-vars
+router.afterEach((to, from, next) => {
+  window.scrollTo(0, 0);
+  // next(); // next is not a function???
+});

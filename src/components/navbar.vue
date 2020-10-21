@@ -37,7 +37,7 @@
             <a href="https://www.facebook.com/yuwei921224" class="nav-link"><i class="fab fa-facebook-square"></i></a>
           </li>
           <li class="facebook2">
-            <a href="" class="nav-link"><i class="fab fa-line"></i></a>
+            <a href="https://line.me/ti/p/W0F_TIdcaD" class="nav-link"><i class="fab fa-line"></i></a>
           </li>
         </ul>
       </div>
