@@ -51,7 +51,7 @@
 </template>
 
 <script>
-import factory from '@/assets/factory.jpg';
+import factory from '@/assets/footer.jpg';
 
 export default {
   data() {
