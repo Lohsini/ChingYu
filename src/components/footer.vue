@@ -80,7 +80,7 @@ footer{
           margin-bottom: 30px;
         }
         .pic{
-          max-width: 250px;
+          max-width: 350px;
           margin: auto;
           img{
             width: 100%;

@@ -7,14 +7,12 @@
           <img :src="pic" alt="pic">
         </div>
         <div class="group row">
-          <h2>保養</h2>
-          <h2>引擎</h2>
-          <h2>鈑金</h2>
-        </div>
-        <div class="group row">
-          <h2>烤漆</h2>
-          <h2>電機</h2>
-          <h2>冷氣</h2>
+          <h2><router-link to="/reservation">保養</router-link></h2>
+          <h2><router-link to="/reservation">引擎</router-link></h2>
+          <h2><router-link to="/reservation">鈑金</router-link></h2>
+          <h2><router-link to="/reservation">烤漆</router-link></h2>
+          <h2><router-link to="/reservation">電機</router-link></h2>
+          <h2><router-link to="/reservation">冷氣</router-link></h2>
         </div>
       </div>
     </div>
@@ -38,6 +36,9 @@ export default {
 <style lang="scss" scoped>
 .service{
   min-height: 92vh;
+  @media screen and (max-width: 992px){
+    min-height: 93.8vh;
+  }
   .container{
     height: 92vh;
     display: flex;
@@ -55,11 +56,19 @@ export default {
         margin-bottom: 30px;
       }
       .group{
+        max-width: 600px;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
         h2{
           margin: 30px;
           border-bottom: black 2px solid;
           padding: 20px;
           padding-bottom: 10px;
+          a{
+            text-decoration: none;
+            color: inherit;
+          }
         }
       }
       .pic{
@@ -84,13 +93,6 @@ export default {
         padding: 50px 0;
         h1{
           margin-bottom: 30px;
-        }
-        .group{
-          display: block;
-          h2{
-            margin: 0px;
-            padding: 50px 60px 20px;
-          }
         }
       }
     }

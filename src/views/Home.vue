@@ -4,7 +4,7 @@
 
       <div class="container">
         <div class="row">
-          <div class="txt col-sm-12 col-md-6">
+          <div class="txt col-md-12 col-lg-6">
             <div class="content">
               <h1><span>慶宇汽車</span> 保養修理廠</h1>
               <h3>歡迎您來本店保養您的愛車</h3>
@@ -42,6 +42,9 @@ export default {
   .background{
     background: rgba(255, 255, 255, 0.6);
     min-height: 92vh;
+    @media screen and (max-width: 992px){
+      min-height: 93.8vh;
+    }
     display: flex;
     align-items: center;
 

@@ -38,12 +38,9 @@ export default {
 <style scoped lang="scss">
 .banner-pic {
   position: relative;
-  box-shadow: 0px -1px 10px #dac4a9;
   .wrapper {
     display: flex;
     .bannertext {
-      width: 100%;
-      color: #5a4446;
       width: 100%;
       .wrapper {
         width: 100%;

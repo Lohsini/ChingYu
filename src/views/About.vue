@@ -28,6 +28,9 @@ export default {
 <style lang="scss" scoped>
 .about{
   min-height: 92vh;
+  @media screen and (max-width: 992px){
+    min-height: 93.8vh;
+  }
   .container{
     height: 50vh;
     display: flex;

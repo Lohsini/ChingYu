@@ -59,6 +59,9 @@ export default {
 <style lang="scss" scoped>
 .firstpage {
   height: 92vh;
+  @media screen and (max-width: 992px){
+    min-height: 93.8vh;
+  }
   .content {
     height: 52vh;
     display: flex;
@@ -79,6 +82,9 @@ export default {
     margin: auto;
     margin-bottom: 50px;
     background-color: rgba(0, 0, 0, 0.04);
+    @media screen and (max-width: 560px){
+      margin-bottom: 0;
+    }
   }
 }
 
