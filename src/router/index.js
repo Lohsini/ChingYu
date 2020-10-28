@@ -30,6 +30,11 @@ const routes = [
     name: 'Reservation',
     component: () => import('../views/Reservation.vue'),
   },
+  {
+    path: '/getform',
+    name: 'getform',
+    component: () => import('../views/getform.vue'),
+  },
 ];
 
 const router = new VueRouter({

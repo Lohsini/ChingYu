@@ -76,16 +76,6 @@
     </div>
 
     <button class="btn btn-warning" @click="submit">確定送出</button>
-    <!-- <br>
-    brand:{{form.brand}} <br>
-    number:{{form.number}} <br>
-    name:{{form.name}} <br>
-    phone:{{form.phone}} <br>
-    line:{{form.line}} <br>
-    date:{{form.date}} <br>
-    time:{{form.time}} <br>
-    service:{{form.service}} <br>
-    content:{{form.content}} -->
   </div>
 </template>
 
@@ -99,27 +89,58 @@ export default {
         name: '',
         phone: '',
         line: '',
-        date: this.changedateFormat(Math.floor(new Date(Math.floor(Date.now())).getTime() / 1000)),
-        time: '08:30-09:00',
+        date: this.changedateFormat(
+          Math.floor(new Date(Math.floor(Date.now())).getTime() / 1000 + 84000 * 2),
+        ),
+        time: '09:30-10:00',
         service: 'maintenance',
         content: '',
       },
     };
   },
+  computed: {
+  },
   methods: {
     submit() {
-      window.alert('已送出，請留意line訊息，謝謝');
-      this.form.brand = '';
-      this.form.number = '';
-      this.form.name = '';
-      this.form.phone = '';
-      this.form.line = '';
-      this.form.date = this.changedateFormat(
-        Math.floor(new Date(Math.floor(Date.now())).getTime() / 1000),
-      );
-      this.form.time = '08:30-09:00';
-      this.form.service = 'maintenance';
-      this.form.content = '';
+      const api = `${process.env.VUE_APP_APIPATH}api/postform`;
+      const formdata = new FormData();
+      formdata.append('brand', this.form.brand);
+      formdata.append('number', this.form.number);
+      formdata.append('name', this.form.name);
+      formdata.append('phone', this.form.phone);
+      formdata.append('line', this.form.line);
+      formdata.append('date', this.form.date);
+      formdata.append('time', this.form.time);
+      if (this.form.service === 'maintenance') {
+        this.form.service = '保養';
+      }
+      if (this.form.service === 'repair') {
+        this.form.service = '維修';
+      }
+      formdata.append('service', this.form.service);
+      formdata.append('content', this.form.content);
+      this.axios.post(api, formdata)
+        .then((response) => {
+          console.log('removeVisitRecord:', response.data);
+          window.alert('已送出，請留意line訊息，謝謝');
+          // 清空復原
+          this.form.brand = '';
+          this.form.number = '';
+          this.form.name = '';
+          this.form.phone = '';
+          this.form.line = '';
+          this.form.date = this.changedateFormat(
+            Math.floor(new Date(Math.floor(Date.now())).getTime() / 1000 + 84000 * 2),
+          );
+          this.form.time = '08:30-09:00';
+          this.form.service = 'maintenance';
+          this.form.content = '';
+        })
+        .catch((err) => {
+          if (err.response.status === 401) {
+            window.alert('抱歉，失敗了，請再一次');
+          }
+        });
     },
     changedateFormat(timestamp) {
       const date = new Date(timestamp * 1000);
