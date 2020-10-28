@@ -45,6 +45,7 @@ export default {
       .wrapper {
         width: 100%;
         height: 42vh;
+        // height: 300px;
         .container {
           display: flex;
           justify-content: center;
@@ -121,4 +122,5 @@ export default {
     }
   }
 }
+
 </style>

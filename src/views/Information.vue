@@ -46,27 +46,29 @@
 
 <style lang="scss" scoped>
 .firstpage {
-  height: 92vh;
   .content {
-    height: 92vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    .row {
-      .txt{
-        .test{
-          h2{
-            padding-bottom: 10px;
-            border-bottom: 2px solid #333;
+    .container{
+      margin: 20px auto;
+      .row {
+        .txt{
+          margin-top: 20px;
+          .test{
+            h2{
+              padding-bottom: 10px;
+              border-bottom: 2px solid #333;
+            }
           }
         }
-      }
-      .map{
-        height: 100%;
-        iframe {
-          border: none;
+        .map{
           height: 100%;
-          width: 100%;
+          iframe {
+            border: none;
+            height: 100%;
+            width: 100%;
+          }
         }
       }
     }
@@ -79,9 +81,7 @@
     .content{
       height: 100%;
       .container{
-        margin: 20px auto;
         .txt{
-          margin-top: 20px;
         }
         .map{
           height: 300px;

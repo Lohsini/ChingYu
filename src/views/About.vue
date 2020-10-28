@@ -27,15 +27,16 @@ export default {
 
 <style lang="scss" scoped>
 .about{
-  min-height: 92vh;
-  @media screen and (max-width: 992px){
-    min-height: 93.8vh;
-  }
+  // min-height: 92vh;
+  // @media screen and (max-width: 992px){
+  //   min-height: 93.8vh;
+  // }
   .container{
-    height: 50vh;
+    min-height: 50vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 50px;
     .test{
       // background-color: rgba(0, 0, 0, 0.08);
       height: 90%;
@@ -47,4 +48,5 @@ export default {
     }
   }
 }
+
 </style>

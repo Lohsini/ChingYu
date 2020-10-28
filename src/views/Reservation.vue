@@ -58,20 +58,18 @@ export default {
 
 <style lang="scss" scoped>
 .firstpage {
-  height: 92vh;
-  @media screen and (max-width: 992px){
-    min-height: 93.8vh;
-  }
   .content {
-    height: 52vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    .row {
-      .txt{
-        h2{
-          padding-bottom: 20px;
-          border-bottom: 2px solid #333;
+    .container{
+      margin: 50px auto 20px;
+      .row {
+        .txt{
+          h2{
+            padding-bottom: 20px;
+            border-bottom: 2px solid #333;
+          }
         }
       }
     }

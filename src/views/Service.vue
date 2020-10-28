@@ -35,18 +35,14 @@ export default {
 
 <style lang="scss" scoped>
 .service{
-  min-height: 92vh;
-  @media screen and (max-width: 992px){
-    min-height: 93.8vh;
-  }
   .container{
-    height: 92vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 50px auto;
     .test{
+      padding: 50px;
       background-color: rgba(0, 0, 0, 0.08);
-      height: 90%;
       width: 100%;
       display: flex;
       justify-content: center;
@@ -98,4 +94,5 @@ export default {
     }
   }
 }
+
 </style>
