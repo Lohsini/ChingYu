@@ -46,10 +46,11 @@
 
 <style lang="scss" scoped>
 .firstpage {
+  // min-height: 92vh;
   .content {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
     .container{
       margin: 20px auto;
       .row {

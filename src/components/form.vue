@@ -121,7 +121,7 @@ export default {
       formdata.append('content', this.form.content);
       this.axios.post(api, formdata)
         .then((response) => {
-          console.log('removeVisitRecord:', response.data);
+          console.log('提交狀態:', response.data);
           window.alert('已送出，請留意line訊息，謝謝');
           // 清空復原
           this.form.brand = '';
