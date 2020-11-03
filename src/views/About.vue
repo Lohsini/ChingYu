@@ -3,7 +3,7 @@
     <banner />
     <div class="container">
       <div class="test">
-        <p>慶宇汽車位於新竹市區，距離新竹火車站約3-5分鐘車程，在地開業將近30年，擁有豐富的經驗與精湛的技術。</p>
+        <p>慶宇汽車位於新竹市區，距離新竹火車站約3-5分鐘車程，在地開業超過30年，擁有豐富的經驗與精湛的技術。</p>
         <p>主要服務項目是汽車保養與維修、鈑金烤漆、汽車買賣等，廠內擁有最新車輛電腦診斷系統，服務不限車子廠牌。</p>
         <p>歡迎預約保養您的愛車</p>
       </div>
@@ -27,10 +27,10 @@ export default {
 
 <style lang="scss" scoped>
 .about{
-  // min-height: 92vh;
-  // @media screen and (max-width: 992px){
-  //   min-height: 93.8vh;
-  // }
+  min-height: 92vh;
+  @media screen and (max-width: 992px){
+    min-height: 95.5vh;
+  }
   .container{
     min-height: 50vh;
     display: flex;

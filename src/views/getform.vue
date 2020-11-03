@@ -12,7 +12,7 @@
         </thead>
         <tbody>
           <tr class="orders" v-for="(item, index) in formlist" :key="index">
-            <td data-th="NO" @click="openDetail(item)">{{index + 1 }}
+            <td data-th="NO">{{index + 1 }}
                 <button class="btn btn-outline-primary btn-sm ml-2" @click="openDetail(item)">
                   看更多</button> </td>
             <td data-th="預約姓名">{{item.name}}</td>

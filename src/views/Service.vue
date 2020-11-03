@@ -16,19 +16,72 @@
         </div>
       </div>
     </div>
+    <div class="show-area">
+      <h1>實拍照片集</h1>
+      <MiniPicture
+      :MiniPicture="MiniPicture"/>
+    </div>
   </div>
 </template>
 
 <script>
+import MiniPicture from '@/components/miniPicture.vue';
 import pic from '../assets/pic2.jpg';
+import pic1 from '../assets/pic1.jpg';
+import pic3 from '../assets/pic3.jpg';
+import pic4 from '../assets/pic4.jpg';
+import pic5 from '../assets/pic5.jpg';
+import really1 from '../assets/really-1.jpg';
+import really2 from '../assets/really-2.jpg';
+import really3 from '../assets/really-3.jpg';
 
 export default {
   data() {
     return {
       pic,
+      MiniPicture: {
+        pictures: [
+          {
+            name: '儀錶板拆裝+冷氣維修',
+            photo: really1,
+            id: 1,
+          },
+          {
+            name: '儀錶板拆裝+冷氣維修',
+            photo: really2,
+            id: 2,
+          },
+          {
+            name: '冷氣維修',
+            photo: really3,
+            id: 3,
+          },
+          {
+            name: '測試-圖來自網路',
+            photo: pic1,
+            id: 4,
+          },
+          {
+            name: '測試-圖來自網路',
+            photo: pic3,
+            id: 5,
+          },
+          {
+            name: '測試-圖來自網路',
+            photo: pic4,
+            id: 6,
+          },
+          {
+            name: '測試-圖來自網路',
+            photo: pic5,
+            id: 7,
+          },
+        ],
+      },
     };
   },
   components: {
+    MiniPicture,
   },
 };
 </script>
@@ -74,6 +127,14 @@ export default {
           width: 100%;
         }
       }
+    }
+  }
+  .show-area{
+    border-top: #ddd solid 1px;
+    margin: 50px auto;
+    padding: 50px 0;
+    h1{
+      margin-bottom: 30px;
     }
   }
 }
