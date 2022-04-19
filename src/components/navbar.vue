@@ -34,10 +34,10 @@
           <li class="nav-item" @click="remove">
             <router-link class="nav-link after" to="/reservation">線上預約</router-link>
           </li>
-          <li class="nav-item" @click="remove">
+          <!-- <li class="nav-item" @click="remove">
             <router-link class="nav-link after" to="/getform">
             <i class="fas fa-user"></i></router-link>
-          </li>
+          </li> -->
         </ul>
         <ul class="navbar-nav nav2">
           <li class="facebook1">
